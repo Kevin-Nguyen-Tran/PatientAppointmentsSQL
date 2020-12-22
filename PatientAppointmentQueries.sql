@@ -1,3 +1,6 @@
+// Tableau visualization for the below queries:
+// https://public.tableau.com/views/PatientAppointment_16083916506940/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link
+
 // How many appointments does each doctor have in 2020? Who has the most?
 SELECT doctors.first_name, doctors.last_name, COUNT(*) AS num_appointments FROM appointments
 JOIN doctors ON doctors.id = appointments.doctor_id
